@@ -25,7 +25,7 @@ header {
     padding: 1rem 2rem;
     background: rgba(11, 13, 23, 0.8);
     backdrop-filter: blur(10px);
-    position: fixed; /* Fixed header so image goes behind it */
+    position: fixed; 
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -43,7 +43,7 @@ input[type="date"] {
     border-radius: 4px;
 }
 
-/* --- THE CINEMA HERO --- */
+/* --- HERO --- */
 .hero {
     display: flex;
     flex-direction: column;
@@ -54,27 +54,27 @@ input[type="date"] {
 .cinema-container {
     position: relative;
     width: 100%;
-    height: 75vh; /* Takes up 75% of the viewport height */
+    height: 75vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top: 0; /* Header is fixed, so this goes to top */
+    margin-top: 0; 
     background: #000;
 }
 
-/* The Blurred Background */
+
 .blur-backdrop {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background-size: cover;
     background-position: center;
     filter: blur(30px) brightness(0.4);
-    transform: scale(1.1); /* Prevent blur edges showing */
+    transform: scale(1.1); 
     z-index: 1;
 }
 
-/* The Sharp Image/Video */
+
 .media-content {
     position: relative;
     z-index: 2;
@@ -83,7 +83,7 @@ input[type="date"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 60px; /* Space for fixed header */
+    padding-top: 60px; 
     padding-bottom: 80px; /* Space for text overlay */
 }
 
@@ -103,7 +103,7 @@ input[type="date"] {
     max-width: 1200px;
 }
 
-/* Text Overlay inside the image area */
+
 .cinema-overlay {
     position: absolute;
     bottom: 0;
@@ -125,7 +125,7 @@ input[type="date"] {
 .meta-tag { color: var(--accent); font-weight: bold; letter-spacing: 1px; text-transform: uppercase; font-size: 0.9rem; }
 .copyright-tag { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 0.5rem; }
 
-/* The Text Info Panel (Below the image) */
+
 .info-panel {
     max-width: 900px;
     margin: 0 auto;
@@ -200,4 +200,5 @@ input[type="date"] {
     .cinema-container { height: 60vh; }
     #hero-title { font-size: 1.5rem; }
     .media-content { padding-top: 70px; }
+
 }
