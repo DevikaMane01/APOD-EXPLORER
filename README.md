@@ -1,4 +1,4 @@
-<p align="center"># APOD Explorer</p>
+## APOD Explorer
 
 <p align="center">
 <img src="https://img.shields.io/badge/node-%3E%3D14.0-green" alt="Node Version" />
